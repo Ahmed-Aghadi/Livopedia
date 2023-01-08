@@ -2,7 +2,7 @@
 
 ## Details
 
-A platform for content creators to share exclusive content to their subscribers.
+Token gated platform for content creators and other users to chat with each others.
 
 Content creators can create normal posts or videos posts on Lens.
 
@@ -10,13 +10,15 @@ The Graph is used to do all the queries and mutations for Lens Protocol.
 
 Everything is encrypted using Lit Protocol.
 
+Unlock protocol is used to create membership and only susbcribers can access the contents.
+
+Thus, content creators can share exclusive contents to their subscribers.
+
 Web3.storage’s w3ui and w3up is used to upload videos and Livepeer playback tool is used to play the videos.
 
 Users can opt-in to notifications channel or can use chat support to contact creators.
 
 Token Gated live streams can be created using Livepeer.
-
-Unlock protocol is used to create membership and only susbcribers can access the contents.
 
 There is a chatroom for all the users to chat using XMTP which supports video chats too ( uses Web3.storage’s & Livepeer playback )
 

@@ -1,0 +1,100 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "registry",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "x",
+                "type": "address"
+            }
+        ],
+        "name": "_addressToString",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes1",
+                "name": "b",
+                "type": "bytes1"
+            }
+        ],
+        "name": "char",
+        "outputs": [
+            {
+                "internalType": "bytes1",
+                "name": "c",
+                "type": "bytes1"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTableId",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTableName",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "lockAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "profileId",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "cid",
+                "type": "string"
+            }
+        ],
+        "name": "registerLock",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

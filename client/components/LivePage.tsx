@@ -120,6 +120,7 @@ export default function LivePage({
                     playbackId={stream?.playbackId}
                     autoPlay
                     muted
+                    showPipButton
                     jwt={(createdJwt as CreateSignedPlaybackResponse)?.token}
                 />
             )}

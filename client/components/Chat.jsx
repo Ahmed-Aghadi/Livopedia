@@ -341,7 +341,7 @@ export default function Chat() {
                           {/* <Badge size="lg">{userAddress}</Badge> */}
                       </Center>
                   </Box>
-                  <ScrollArea style={{ width: "100%", height: "95%" }} type="never">
+                  <ScrollArea style={{ width: "100%", height: "92%" }} type="never">
                       {isMessageLoading ? (
                           messageSkeletons
                       ) : (
@@ -957,7 +957,7 @@ function Video({ cid, position }) {
             {cid && cid.includes("bafy") && (
                 <Group position={position}>
                     <Box sx={{ height: "200px", marginLeft: "80px" }}>
-                        <Player src={`ipfs://${cid}`} />
+                        <Player src={`ipfs://${cid}`} showPipButton />
                     </Box>
                 </Group>
             )}

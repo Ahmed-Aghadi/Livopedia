@@ -19,9 +19,9 @@ export default function Video({ assetId }: VideoProps) {
                 <Center mt="sm">
                     <Box sx={{ height: "300px" }}>
                         {assetId.includes("-") ? (
-                            <Player playbackId={asset?.playbackId} />
+                            <Player playbackId={asset?.playbackId} showPipButton />
                         ) : (
-                            <Player src={`ipfs://${assetId}`} />
+                            <Player src={`ipfs://${assetId}`} showPipButton />
                         )}
                     </Box>
                 </Center>

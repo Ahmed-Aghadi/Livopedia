@@ -287,7 +287,7 @@ export default function Home() {
         }
 
         const usersData = await fetch(
-            "https://testnets.tableland.network/query?s=" +
+            "https://testnets.tableland.network/api/v1/query?statement=" +
                 "SELECT * FROM " +
                 tableName +
                 " WHERE userAddress = '" +

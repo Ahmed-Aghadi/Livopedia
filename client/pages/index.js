@@ -16,9 +16,11 @@ export default function Home() {
     }, [])
 
     const fetchUsers = async () => {
-        // const postsData = await fetch("https://testnets.tableland.network/query?s=" + "SELECT * FROM " + postTableName + " LIMIT 10")
+        // const postsData = await fetch("https://testnets.tableland.network/api/v1/query?statement=" + "SELECT * FROM " + postTableName + " LIMIT 10")
         const usersData = await fetch(
-            "https://testnets.tableland.network/query?s=" + "SELECT * FROM " + tableName
+            "https://testnets.tableland.network/api/v1/query?statement=" +
+                "SELECT * FROM " +
+                tableName
         )
         const usersDataJson = await usersData.json()
         console.log("usersDataJson", usersDataJson)

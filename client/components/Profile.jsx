@@ -125,9 +125,9 @@ function Profile() {
     const fetchPosts = async (userAddressArg) => {
         const userAddress = userAddressArg ? userAddressArg : router.query.userAddress[0]
         setUserAddress(userAddress.toLowerCase())
-        // // const postsData = await fetch("https://testnets.tableland.network/query?s=" + "SELECT * FROM " + postTableName + " LIMIT 10")
+        // // const postsData = await fetch("https://testnets.tableland.network/api/v1/query?statement=" + "SELECT * FROM " + postTableName + " LIMIT 10")
         // const postsData = await fetch(
-        //     "https://testnets.tableland.network/query?s=" +
+        //     "https://testnets.tableland.network/api/v1/query?statement=" +
         //         "SELECT * FROM " +
         //         postTableName +
         //         " WHERE userAddress = '" +
@@ -137,7 +137,7 @@ function Profile() {
         // const postsDataJson = await postsData.json()
         // setPosts(postsDataJson)
         const usersData = await fetch(
-            "https://testnets.tableland.network/query?s=" +
+            "https://testnets.tableland.network/api/v1/query?statement=" +
                 "SELECT * FROM " +
                 tableName +
                 " WHERE userAddress = '" +
